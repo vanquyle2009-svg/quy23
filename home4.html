@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Responsive Image Gallery</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class="container"> 
+  <div class="column">
+    <img src="anh01.jpeg" alt="Hinh 1">
+  </div>
+  
+  <div class="column">
+    <img src="anh02.jpeg" alt="Hinh 2">
+  </div> 
+   
+  <div class="column">
+    <img src=anh03.jpeg" alt="Hinh 3">
+  </div>
+  
+  <div class="column">
+    <img src="anh04.jpeg" alt="Hinh 4">
+  </div>
+</div>
+
+</body>
+</html>
